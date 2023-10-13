@@ -52,7 +52,7 @@ resource "aws_instance" "test" {
   ami                    = "ami-053b0d53c279acc90" // Ubuntu server 22.04
   instance_type          = "t2.micro" //instance type
   vpc_security_group_ids = [aws_security_group.web-sg.id]
-  key_name               = "AWS-terraform"
+  key_name               = "secGroupLesson2"
   tags = {
     Name = "Test insta_Lesson_1_TF"
   }
